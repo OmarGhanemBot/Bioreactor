@@ -1,2 +1,25 @@
-# Bioreactor
-Biological Applications, Computational biology and more! :D
+Bioreactor 
+=========
+This program is used to make a simple task of taking a random *SEQ* of *Nucleic Acid* and Make the magic :-
+
+1-Check IF the SEQ is *RNA* or *DNA*.
+
+2-Give you the Complementary *SEQ*.
+
+3-Count Number of *Total* and *Number of each Nucleotide*.
+
+
+How To Use:-
+=============== 
+(1)----> Enter your "SEQ"
+
+(2)----> Enter the direction of your "SEQ" (*)
+
+(3)----> Number of *Total* and *Number of each Nucleotide* 
+
+(4)----> Get Your N' >-Complementary *SEQ* -< N''
+
+
+(*) In this step you should enter the direction by entring the number of carbon atom of the *Deoxyribose Sugar* or *Ribose Sugar* as following :- 
+
+== *3->5*  ==  OR  ==  *5->3*  == {without "spaces" should have "->"in between}
