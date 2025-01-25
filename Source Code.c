@@ -1,6 +1,4 @@
 #include <cs50.h>
-#include <ctype.h>
-#include <math.h>
 #include <stdio.h>
 #include <string.h>
 
@@ -9,34 +7,53 @@ int Count_Nuc_T(string seq);
 int Count_Nuc_G(string seq);
 int Count_Nuc_C(string seq);
 int Count_Nuc_U(string seq);
-void Check_Type(string seq);
+int Check_Type(string seq);
 void Comp_SEQ(string seq);
 
 int main(void)
 {
     // Promot User To Enter Seq
-    string SEQ = get_string("YOUR SEQ IS:");
+    string SEQ = get_string("YOUR SEQ IS: ");
 
     // Promot User To Enter Seq Direction
     string Direction = get_string("Direction of Your seq is : ");
-
+	string leading = "5-3";
+	string lagging = "3-5";
+	int res1 = strcmp(leading, Direction);
+	int res2 = strcmp(lagging, Direction);
     // Give Complimentry Seq
-    if (Direction[0] == '5')
+    if (res1 == 0)
     {
-        printf("COMPLEMENTARY SEQ:");
-        printf("3'->");
+        printf("COMPLEMENTARY SEQ: ");
+        printf("3'-> ");
         Comp_SEQ(SEQ);
-        printf("<- 5'\n");
+        printf(" <- 5'\n");
     }
-    else if (Direction[0] == '3')
+    else if (res2 == 0)
     {
-        printf("COMPLEMENTARY SEQ:");
+        printf("COMPLEMENTARY SEQ: ");
         printf("5'->");
         Comp_SEQ(SEQ);
         printf("<- 3'\n");
     }
+	else
+	{
+        printf("You should enter the direction by entring the number of carbon atom of the *Deoxyribose Sugar* or *Ribose Sugar* as following :\n3-5 ==  OR  ==  5-3  == {without *spaces* should have *-* in between}");
+        return 1;
+	}
+
+
     // Check Type of Nucleic acid
-    Check_Type(SEQ);
+
+    int check =Check_Type(SEQ);
+    if(check == 0)
+    {
+        printf("Nucleic acid Type is **DNA**\n");
+    }
+    else if (check >= 1)
+    {
+        printf("Nucleic acid Type is **RNA**\n");
+    }
 
     // Calculate The Length Of The SEQ
     int DNA_SEQ_LENGTH = strlen(SEQ);
@@ -49,16 +66,20 @@ int main(void)
     int N_G = Count_Nuc_G(SEQ);
     printf("Guan_Nuc  =%i\n", N_G);
 
-    int N_T = Count_Nuc_T(SEQ);
-    printf("Thym_Nuc  =%i\n", N_T);
-
     int N_C = Count_Nuc_C(SEQ);
     printf("Cyto_Nuc  =%i\n", N_C);
 
+    int N_T = Count_Nuc_T(SEQ);
+
     int N_U = Count_Nuc_U(SEQ);
+
     if (N_U > 0)
     {
-        printf("Urac_Nuc =%i\n", N_U);
+        printf("Urac_Nuc  =%i\n", N_U);
+    }
+    else if (N_T > 0)
+    {
+        printf("Thym_Nuc  =%i\n", N_T);
     }
 }
 
@@ -122,21 +143,18 @@ int Count_Nuc_T(string seq)
     return T_number;
 }
 
-void Check_Type(string seq)
+int Check_Type(string seq)
 {
+    int number= 0;
     int len = strlen(seq);
     for (int i = 0; i < len; i++)
     {
         if (seq[i] == 'u' || seq[i] == 'U')
         {
-            printf("Nucleic acid Type is **RNA**\n");
+           number++;
         }
-        else if (seq[i] != 'u' || seq[i] != 'U')
-        {
-            printf("Nucleic acid Type is **DNA**\n");
-        }
-        break;
     }
+    return number;
 }
 
 int Count_Nuc_U(string seq)
