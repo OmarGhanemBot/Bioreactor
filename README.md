@@ -15,9 +15,9 @@ How To Use:-
 
 (2)----> Enter the direction of your "SEQ" (*)
 
-(3)----> Number of *Total* and *Number of each Nucleotide* 
+Get ----> Number of *Total* and *Number of each Nucleotide*.
 
-(4)----> Get Your N' >-Complementary *SEQ* -< N''
+Get ---->  Your N' >-Complementary *SEQ* -< N''.
 
 
 (*) In this step you should enter the direction by entring the number of carbon atom of the *Deoxyribose Sugar* or *Ribose Sugar* as following :- 
