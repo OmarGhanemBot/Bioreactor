@@ -1,6 +1,6 @@
 Bioreactor 
 =========
-This program is used to make a simple task of taking a random *SEQ* of *Nucleic Acid* and Make THIS magic (:D) :-
+This simple C program that can be used to do a simple task of taking a random *SEQ* of *Nucleic Acid* and Make THIS magic (:D) :-
 
 1-Check IF the SEQ is *RNA* or *DNA*.
 
