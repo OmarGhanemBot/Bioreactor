@@ -25,3 +25,7 @@ How To Use:-
 == *3->5*  ==  OR  ==  *5->3*  == {without "spaces" should have "->"in between}
 
 ![image](https://github.com/user-attachments/assets/753b9206-3cd6-41f5-99fa-a2d9bab8a0a6)
+
+Note:-
+======
+You have Include cs50 library which you could find it here : https://cs50.readthedocs.io/libraries/cs50/c/
