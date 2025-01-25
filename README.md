@@ -28,4 +28,4 @@ How To Use:-
 
 Note:-
 ======
-You have Include cs50 library which you could find it here : https://cs50.readthedocs.io/libraries/cs50/c/
+You have to include cs50 library which you could find it here : https://cs50.readthedocs.io/libraries/cs50/c/
