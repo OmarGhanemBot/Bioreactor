@@ -24,7 +24,8 @@ How To Use:-
 
 == *3->5*  ==  OR  ==  *5->3*  == {without "spaces" should have "->"in between}
 
-![image](https://github.com/user-attachments/assets/80d32d5c-643e-4ec9-91b6-1f5085f42835)
+
+![image](https://github.com/user-attachments/assets/cb18d442-cf3e-4982-b95e-eab7213ab43b)
 
 
 Note:-
