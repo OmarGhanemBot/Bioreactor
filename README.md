@@ -22,7 +22,7 @@ How To Use:-
 
 (*) In this step you should enter the direction by entring the number of carbon atom of the *Deoxyribose Sugar* or *Ribose Sugar* as following :- 
 
-== *3->5*  ==  OR  ==  *5->3*  == {without "spaces" should have "-"in between}
+== *3-5*  ==  OR  ==  *5-3*  == {without "spaces" should have "-"in between}
 
 
 ![image](https://github.com/user-attachments/assets/cb18d442-cf3e-4982-b95e-eab7213ab43b)
