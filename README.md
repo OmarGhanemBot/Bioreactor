@@ -6,7 +6,7 @@ This program is used to make a simple task of taking a random *SEQ* of *Nucleic 
 
 2-Give you the Complementary *SEQ*.
 
-3-Count Number of *Total* and *Number of each Nucleotide*.
+3-Count Number of *Total* and *Number of each type of Nucleotides*.
 
 
 How To Use:-
